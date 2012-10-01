@@ -10,13 +10,13 @@
 
 1 S1 WhAdverb AuxS ?
 
+1 S1 VerbSingularToBe NounPhraseSingular NounPhraseSingular ?
+1 S1 VerbPluralToBe NounPhrasePlural NounPhrasePlural ?
+1 S1 VerbSingularToBe NounPhraseSingular GerundVerbInfPhrase ?
+1 S1 VerbPluralToBe NounPhrasePlural GerundVerbInfPhrase ?
+
 1 AuxS AuxSingular NounPhraseSingular VerbInfPhrase
 1 AuxS AuxPlural NounPhrasePlural VerbInfPhrase
-
-1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive
-1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive
-1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbInfTransitive
-1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbInfTransitive
 
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural
@@ -41,11 +41,12 @@
 1 NounPlural Adj NounPlural
 1 NounProperPlural Adj NounProperPlural
 
+1 PrepPhrase Prep NounPhrase
+
 1 VerbInfPhrase VerbInf
 1 VerbInfPhrase VerbInf PrepPhrase
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
-
 
 1 VerbPhraseSingular VerbSingular
 1 VerbPhraseSingular VerbSingular PrepPhrase
@@ -66,21 +67,36 @@
 1 VerbPluralTransitive VerbPluralThat
 1 VerbSingularTransitive VerbSingularThat
 
-1 PrepPhrase Prep NounPhrase
+1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive
+1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive
+1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbInfTransitive 
+1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbInfTransitive
 
+1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive PrepPhrase
+1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive PrepPhrase
+1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbInfTransitive PrepPhrase 
+1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbInfTransitive PrepPhrase
 
+1 GerundVerbInfPhrase GerundVerbPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbSingularTransitive NounPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbPluralTransitive NounPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbInfTransitive NounPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfTransitive NounPhrase
 
+1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbInfIntransitive
+1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive
+1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbInfIntransitive
+1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive
 
-
-
-
+1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbInfIntransitive PrepPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive PrepPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbInfIntransitive PrepPhrase
+1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive PrepPhrase
+ 
 1 GerundVerbPhrase VerbIng
 1 GerundVerbPhrase VerbIng NounPhrase
 1 GerundVerbPhrase VerbIng PrepPhrase
 1 GerundVerbPhrase VerbIng NounPhrase PrepPhrase
-
-
-
 
 
 
