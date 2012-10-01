@@ -375,10 +375,10 @@
 1	Misc	whose
 
 # Wh-adverbs
-1	WHAdverb	how
-1	WHAdverb	when
-1	WHAdverb	where
-1	WHAdverb	why
+1	WhAdverb	how
+1	WhAdverb	when
+1	WhAdverb	where
+1	WhAdverb	why
 
 
 # Possessive marker.

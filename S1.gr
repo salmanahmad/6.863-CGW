@@ -3,11 +3,15 @@
 1 S1 NounPhraseSingular VerbPhraseSingular .
 1 S1 NounPhrasePlural VerbPhrasePlural .
 
-1 S1 AuxSingular NounPhraseSingular VerbInf ?
-1 S1 AuxPlural NounPhrasePlural VerbInf ?
+1 S1 AuxS ?
 
 1 S1 WhPronoun AuxSingular NounPhraseSingular VerbInfTransitive ?
 1 S1 WhPronoun AuxPlural NounPhrasePlural VerbInfTransitive ?
+
+1 S1 WhAdverb AuxS ?
+
+1 AuxS AuxSingular NounPhraseSingular VerbInfPhrase
+1 AuxS AuxPlural NounPhrasePlural VerbInfPhrase
 
 1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive
 1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive
@@ -36,6 +40,12 @@
 
 1 NounPlural Adj NounPlural
 1 NounProperPlural Adj NounProperPlural
+
+1 VerbInfPhrase VerbInf
+1 VerbInfPhrase VerbInf PrepPhrase
+1 VerbInf VerbInfIntransitive
+1 VerbInf VerbInfTransitive NounPhrase
+
 
 1 VerbPhraseSingular VerbSingular
 1 VerbPhraseSingular VerbSingular PrepPhrase
