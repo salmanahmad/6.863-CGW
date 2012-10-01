@@ -10,15 +10,24 @@
 1 NounPhraseSingular Det NounSingular
 1 NounPhraseSingular DetSingular NounSingular
 1 NounPhraseSingular NounProperSingular
+1 NounPhraseSingular GerundVerbPhrase
+
+1 NounSingular Adj NounSingular
+1 NounProperSingular Adj NounProperSingular
 
 1 NounPhrasePlural Det NounPlural
 1 NounPhrasePlural NounProperPlural
 1 NounPhrasePlural Cardinal NounPlural
 
+1 NounPlural Adj NounPlural
+1 NounProperPlural Adj NounProperPlural
+
 # 1 NounPhrasePlural DetPlural NounPlural
 
 1 VerbPhraseSingular VerbSingular
 1 VerbPhraseSingular VerbSingular PrepPhrase
+
+1 VerbSingular VerbSingularToBe Adj
 
 1 VerbSingular VerbSingularIntransitive
 1 VerbSingular VerbSingularTransitive NounPhrase
@@ -26,15 +35,38 @@
 1 VerbPhrasePlural VerbPlural
 1 VerbPhrasePlural VerbPlural PrepPhrase
 
+1 VerbPlural VerbPluralToBe Adj
+
 1 VerbPlural VerbPluralIntransitive
 1 VerbPlural VerbPluralTransitive NounPhrase
 
 1 VerbPluralTransitive VerbPluralThat
 1 VerbSingularTransitive VerbSingularThat
 
-
-
 1 PrepPhrase Prep NounPhrase
+
+
+
+
+
+
+
+1 GerundVerbPhrase VerbIng
+1 GerundVerbPhrase VerbIng NounPhrase
+1 GerundVerbPhrase VerbIng PrepPhrase
+1 GerundVerbPhrase VerbIng NounPhrase PrepPhrase
+
+
+
+
+
+
+
+
+
+
+
+
 
 #
 #

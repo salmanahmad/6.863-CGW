@@ -143,10 +143,11 @@
 
 1 VerbThatIng suggesting
 
-1 VerbToBe is
-1 VerbToBe are
-1 VerbToBe was
-1 VerbToBe were
+1 VerbSingularToBe is
+1 VerbSingularToBe was
+
+1 VerbPluralToBe are
+1 VerbPluralToBe were
 
 # That verbs
 1 VerbThat suggest
