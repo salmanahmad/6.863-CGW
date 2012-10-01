@@ -1,0 +1,23 @@
+***
+Before doing anything, read the instructions in index.html (it's easiest if you open them in a browser).
+
+***
+Be sure to set your path to include
+
+ .
+
+by running:
+
+(bash):  export PATH=.:$PATH
+(tcsh):  setenv PATH .:$PATH
+
+Each person on your team needs to do this.
+
+***
+Avoid pesky permissions problems by having each person on your
+team run:
+
+umask 000
+
+***
+

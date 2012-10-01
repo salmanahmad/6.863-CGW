@@ -1,0 +1,78 @@
+#!/usr/bin/env perl
+# Author: yks
+# computes the Cohen's Kappa between two files containing
+# sets of items (sentences).
+# The subsets must be from some total set of items.
+#
+# Each subset file must already be sorted.
+# The third argument is the total number of items.
+# Usage:
+#   kappa <sorted file 1> <sorted file 2> <number of items>
+#   
+use strict;
+
+my $file1 = shift;
+my $file2 = shift;
+my $total = shift;
+
+if (!$file1 or !$file2 or !$total) {
+    die "usage: $0 <file_1> <file_2> <total>\n";
+}
+
+if (!-e $file1) {
+    die "error: $file1 does not exist\n";
+}
+
+if (!-e $file2) {
+    die "error: $file2 does not exist\n";
+}
+
+my $size1 = `wc -l $file1`;
+my $size2 = `wc -l $file2`;
+chomp $size1;
+chomp $size2;
+
+my $in1not2 = `diff $file1 $file2 | grep '<' | wc -l`;
+chomp $in1not2;
+
+my $in2not1 = `diff $file1 $file2 | grep '>' | wc -l`;
+chomp $in2not1;
+
+my $common1 = $size1 - $in1not2;
+my $common2 = $size2 - $in2not1;
+
+print "size[1]: $size1\n";
+print "size[2]: $size2\n";
+print "in_1_not_2: $in1not2\n";
+print "in_2_not_1: $in2not1\n";
+print "in_common: $common1 ($common2)\n";
+
+my $c11 = $common1;
+my $c12 = $in1not2;
+my $c21 = $in2not1;
+my $c22 = $total - $common1 - $in1not2 - $in2not1;
+
+print "\tC(1)\tC(0)\n";
+printf "C'(1)\t%d\t%d\t%d\n", $c11, $c12, $c11+$c12;
+printf "C'(0)\t%d\t%d\t%d\n", $c21, $c22, $c21+$c22;
+printf "\t%d\t%d\t%d\n", $c11+$c21, $c12+$c22, $c11+$c12+$c21+$c22;
+
+my $p11 = $c11 / $total;
+my $p12 = $c12 / $total;
+my $p21 = $c21 / $total;
+my $p22 = $c22 / $total;
+
+print "\tP(1)\tP(0)\n";
+printf "P'(1)\t%0.3f\t%0.3f\t%0.3f\n", $p11, $p12, $p11+$p12;
+printf "P'(0)\t%0.3f\t%0.3f\t%0.3f\n", $p21, $p22, $p21+$p22;
+printf "\t%0.3f\t%0.3f\t%0.3f\n", $p11+$p21, $p12+$p22, $p11+$p12+$p21+$p22;
+
+my $p_observed = $p11 + $p22;
+my $p_expected = ($p11+$p21)*($p11+$p21) + ($p12+$p22)*($p21+$p22);
+
+printf "P(observed): %0.5f\n", $p_observed;
+printf "P(expected): %0.5f\n", $p_expected;
+
+my $kappa = ($p_observed - $p_expected) / (1 - $p_expected);
+printf "kappa: %0.5f\n", $kappa;
+
