@@ -116,17 +116,31 @@
 
 
 # Verbs (base form).
-1	VerbInf	have
-1	VerbInf	speak
-1	VerbInf	cover
-1	VerbInf	be
-1	VerbInf	ride
-1	VerbInf	drink
-1	VerbInf	grow
-1	VerbInf	carry
-1	VerbInf	suggest
-1	VerbInf	migrate
-1	VerbInf	know
+1	VerbInfTransitive	have
+1	VerbInfTransitive	speak
+1	VerbInfTransitive	cover
+1	VerbInfTransitive	be
+1	VerbInfTransitive	ride
+1	VerbInfTransitive	drink
+1	VerbInfTransitive	grow
+1	VerbInfTransitive	carry
+
+
+1	VerbInfIntransitive	grow
+1	VerbInfIntransitive	drink
+1	VerbInfIntransitive	ride
+1	VerbInfIntransitive	be
+1	VerbInfIntransitive	migrate
+1	VerbInfIntransitive	speak
+1	VerbInfIntransitive	know
+
+
+# TODO - Handle things in the form of that
+1	VerbInfThat	suggest
+1	VerbInfThat	know
+
+
+
 
 # Verbs (present participles).
 1	VerbIng	having
@@ -311,14 +325,15 @@
 
 
 # Personal pronouns.
-1	Pronoun	he
-1	Pronoun	her
-1	Pronoun	him
-1	Pronoun	it
-1	Pronoun	one
-1	Pronoun	she
-1	Pronoun	them
-1	Pronoun	they
+1	PronounSingular	he
+1	PronounSingular	her
+1	PronounSingular	him
+1	PronounSingular	it
+1	PronounSingular	one
+1	PronounSingular	she
+
+1	PronounPlural	them
+1	PronounPlural	they
 
 
 # Possessive personal pronouns

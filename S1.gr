@@ -3,12 +3,16 @@
 1 S1 NounPhraseSingular VerbPhraseSingular .
 1 S1 NounPhrasePlural VerbPhrasePlural .
 
-1 S1 AuxS ?
+1 S1 AuxSingular NounPhraseSingular VerbInf ?
+1 S1 AuxPlural NounPhrasePlural VerbInf ?
 
-1 S1 WhPronoun AuxS ?
+1 S1 WhPronoun AuxSingular NounPhraseSingular VerbInfTransitive ?
+1 S1 WhPronoun AuxPlural NounPhrasePlural VerbInfTransitive ?
 
-1 AuxS AuxSingular NounPhraseSingular VerbInf
-1 AuxS AuxPlural NounPhrasePlural VerbInf
+1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive
+1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive
+1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbInfTransitive
+1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbInfTransitive
 
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural
@@ -18,6 +22,7 @@
 1 NounPhraseSingular DetSingular NounSingular
 1 NounPhraseSingular NounProperSingular
 1 NounPhraseSingular GerundVerbPhrase
+1 NounPhraseSingular PronounSingular
 
 1 NounSingular Adj NounSingular
 1 NounProperSingular Adj NounProperSingular
@@ -26,6 +31,7 @@
 1 NounPhrasePlural Det NounPlural
 1 NounPhrasePlural NounProperPlural
 1 NounPhrasePlural Cardinal NounPlural
+1 NounPhrasePlural PronounPlural
 #1 NounPhrasePlural DetPlural NounPlural
 
 1 NounPlural Adj NounPlural
