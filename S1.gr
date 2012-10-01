@@ -3,6 +3,11 @@
 1 S1 NounPhraseSingular VerbPhraseSingular .
 1 S1 NounPhrasePlural VerbPhrasePlural .
 
+1 S1 AuxSingular NounPhraseSingular VerbInf ?
+1 S1 AuxPlural NounPhrasePlural VerbInf ?
+
+
+
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural
 1 NounPhrase NounPhrase PrepPhrase
@@ -15,14 +20,14 @@
 1 NounSingular Adj NounSingular
 1 NounProperSingular Adj NounProperSingular
 
+1 NounPhrasePlural NounPlural
 1 NounPhrasePlural Det NounPlural
 1 NounPhrasePlural NounProperPlural
 1 NounPhrasePlural Cardinal NounPlural
+#1 NounPhrasePlural DetPlural NounPlural
 
 1 NounPlural Adj NounPlural
 1 NounProperPlural Adj NounProperPlural
-
-# 1 NounPhrasePlural DetPlural NounPlural
 
 1 VerbPhraseSingular VerbSingular
 1 VerbPhraseSingular VerbSingular PrepPhrase

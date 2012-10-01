@@ -116,17 +116,17 @@
 
 
 # Verbs (base form).
-1	VerbInfinitive	have
-1	VerbInfinitive	speak
-1	VerbInfinitive	cover
-1	VerbInfinitive	be
-1	VerbInfinitive	ride
-1	VerbInfinitive	drink
-1	VerbInfinitive	grow
-1	VerbInfinitive	carry
-1	VerbInfinitive	suggest
-1	VerbInfinitive	migrate
-1	VerbInfinitive	know
+1	VerbInf	have
+1	VerbInf	speak
+1	VerbInf	cover
+1	VerbInf	be
+1	VerbInf	ride
+1	VerbInf	drink
+1	VerbInf	grow
+1	VerbInf	carry
+1	VerbInf	suggest
+1	VerbInf	migrate
+1	VerbInf	know
 
 # Verbs (present participles).
 1	VerbIng	having
@@ -153,9 +153,9 @@
 1 VerbThat suggest
 1 VerbThat know
 
-# a 3rd person verb - TODO - Consider plurality
-1	VBZ	do
-1	VBZ	does
+# a 3rd person verb
+1 AuxPlural	do
+1	AuxSingular	does
 
 # Verbs (past tense).
 1	Misc	had
