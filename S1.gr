@@ -3,10 +3,12 @@
 1 S1 NounPhraseSingular VerbPhraseSingular .
 1 S1 NounPhrasePlural VerbPhrasePlural .
 
-1 S1 AuxSingular NounPhraseSingular VerbInf ?
-1 S1 AuxPlural NounPhrasePlural VerbInf ?
+1 S1 AuxS ?
 
+1 S1 WhPronoun AuxS ?
 
+1 AuxS AuxSingular NounPhraseSingular VerbInf
+1 AuxS AuxPlural NounPhrasePlural VerbInf
 
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural

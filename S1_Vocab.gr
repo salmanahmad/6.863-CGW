@@ -353,8 +353,8 @@
 1	WHDeterminer	which
 
 # Wh-pronouns.
-1	WHPronoun	what
-1	WHPronoun	who
+1	WhPronoun	what
+1	WhPronoun	who
 
 # Wh possessive pronoun.
 1	Misc	whose
