@@ -51,6 +51,7 @@
 1 VerbPhraseSingular VerbSingular
 1 VerbPhraseSingular VerbSingular PrepPhrase
 
+1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
 
 1 VerbSingular VerbSingularIntransitive
@@ -59,6 +60,7 @@
 1 VerbPhrasePlural VerbPlural
 1 VerbPhrasePlural VerbPlural PrepPhrase
 
+1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj
 
 1 VerbPlural VerbPluralIntransitive
