@@ -1,13 +1,98 @@
 # This is a very, very, very simple grammar to get you started.
 
-1	S1	NP VP .
+1 S1 NounPhraseSingular VerbPhraseSingular .
+1 S1 NounPhrasePlural VerbPhrasePlural .
 
-1	VP	VerbT NP
+1 NounPhrase NounPhraseSingular
+1 NounPhrase NounPhrasePlural
+1 NounPhrase NounPhrase PrepPhrase
 
-20	NP	Det Nbar
-1	NP	Proper
+1 NounPhraseSingular Det NounSingular
+1 NounPhraseSingular DetSingular NounSingular
+1 NounPhraseSingular NounProperSingular
 
-20	Nbar	Noun
-1	Nbar	Nbar PP
+1 NounPhrasePlural Det NounPlural
+1 NounPhrasePlural NounProperPlural
+1 NounPhrasePlural Cardinal NounPlural
 
-1	PP	Prep NP
+# 1 NounPhrasePlural DetPlural NounPlural
+
+1 VerbPhraseSingular VerbSingular
+1 VerbPhraseSingular VerbSingular PrepPhrase
+
+1 VerbSingular VerbSingularIntransitive
+1 VerbSingular VerbSingularTransitive NounPhrase
+
+1 VerbPhrasePlural VerbPlural
+1 VerbPhrasePlural VerbPlural PrepPhrase
+
+1 VerbPlural VerbPluralIntransitive
+1 VerbPlural VerbPluralTransitive NounPhrase
+
+1 VerbPluralTransitive VerbPluralThat
+1 VerbSingularTransitive VerbSingularThat
+
+
+
+1 PrepPhrase Prep NounPhrase
+
+#
+#
+#
+#1 S1 VerbIng PP is Adj .
+#1 S1 VerbIng PP VP Adverbs .
+#
+#1 S1 YNP ?
+#1 S1 WHDeterminer YNP  ?
+#1 S1 WHPronoun VBZ NP VPT VSP   ?
+#1 S1 WHAdverb YNP ?
+#1 S1 VerbToBe Pronoun VPIng ?
+#
+#
+##1 S1 WHPronoun YNP  ?
+#
+#1 VPIng VerbIng
+#
+#1 VPIng VPTIng VSP
+#
+#
+#1 YNP VBZ InfS
+#
+#1 InfS NP VerbIP
+#
+#1 VerbIP VerbI
+#1 VerbIP VPT
+#
+## TODO - Special case for possessives or something...
+#1 VerbIP VerbI NP 
+#
+#1	VP	VerbT NP
+#1	VP	VerbT PP
+#
+## TODO - Consider making VerbI a phrasal verb...
+#1 VSP NP VerbI PP
+#
+## TODO - Add a root class for all of the verbs
+##1 VSP NP Verb
+#
+#1 VPT VerbThat
+#1 VPT VerbThat that
+#
+#1 VPT VerbThat
+#1 VPT VerbThat that
+#
+#1 VPTIng VerbThatIng
+#1 VPTIng VerbThatIng that
+#
+#20	NP	Det Nbar
+#20	NP	NounPl
+#1	NP	Proper
+#1	NP	Pronoun
+#
+#20	Nbar	Noun
+#20	Nbar	NounPl
+#1	Nbar	Nbar PP
+#
+#1	PP	Prep NP
+#
+
