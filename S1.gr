@@ -1,10 +1,14 @@
 # This is a very, very, very simple grammar to get you started.
 
-1 S1 NounPhraseSingular VerbPhraseSingular EOS
-1 S1 NounPhrasePlural VerbPhrasePlural EOS
-1 S1 do not VerbInfPhrase EOS
-1 S1 it is NounPhraseSingular who VerbPhraseSingular EOS
+1 S1 S EOS
+
+1 S NounPhraseSingular VerbPhraseSingular
+1 S NounPhrasePlural VerbPhrasePlural
+1 S do not VerbInfPhrase
+1 S it is NounPhraseSingular who VerbPhraseSingular
 # TODO - If we relaly want to...we can make this better...
+
+1 S1 S Transition S EOS
 
 1 S1 AuxS ?
 
@@ -24,6 +28,8 @@
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural
 1 NounPhrase NounPhrase PrepPhrase
+
+1 Det PossPersonalPronouns
 
 1 NounPhraseSingular Det NounSingular
 1 NounPhraseSingular DetSingular NounSingular
@@ -68,6 +74,7 @@
 1 VerbPhraseSingular VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular1 Adverb
 1 VerbPhraseSingular Adverb VerbPhraseSingular1
+1 VerbPhraseSingular VerbPhraseSingular S
 
 1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
@@ -84,6 +91,7 @@
 1 VerbPhrasePlural VerbPhrasePlural1
 1 VerbPhrasePlural VerbPhrasePlural1 Adverb
 1 VerbPhrasePlural Adverb VerbPhrasePlural1
+1 VerbPhrasePlural VerbPluralThat S
 
 1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj
@@ -93,6 +101,14 @@
 
 1 VerbPluralTransitive VerbPluralThat
 1 VerbSingularTransitive VerbSingularThat
+
+1	VerbSingularTransitive	VerbPastTenseSingularTransitive
+1	VerbSingularIntransitive	VerbPastTenseSingularIntransitive
+
+1	VerbPluralTransitive	VerbPastTensePluralTransitive
+1	VerbPluralIntransitive	VerbPastTensePluralIntransitive
+
+
 
 1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive
 1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive

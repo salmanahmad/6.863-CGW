@@ -172,18 +172,44 @@
 1	AuxSingular	does
 
 # Verbs (past tense).
-1	VerbPastTense	had
-1	VerbPastTense	spoke
-1	VerbPastTense	covered
-1	VerbPastTense	was
-1	VerbPastTense	were
-1	VerbPastTense	rode
-1	VerbPastTense	drank
-1	VerbPastTense	grew
-1	VerbPastTense	carried
-1	VerbPastTense	suggested
-1	VerbPastTense	migrated
-1	VerbPastTense	knew
+1	VerbPastTenseSingularTransitive	was
+1	VerbPastTenseSingularTransitive	had
+1	VerbPastTenseSingularTransitive	spoke
+1	VerbPastTenseSingularTransitive	covered
+1	VerbPastTenseSingularTransitive	rode
+1	VerbPastTenseSingularTransitive	drank
+1	VerbPastTenseSingularTransitive	grew
+1	VerbPastTenseSingularTransitive	carried
+1	VerbPastTenseSingularTransitive	suggested
+1	VerbPastTenseSingularTransitive	knew
+
+1	VerbPastTenseSingularIntransitive	spoke
+1	VerbPastTenseSingularIntransitive	rode
+1	VerbPastTenseSingularIntransitive	drank
+1	VerbPastTenseSingularIntransitive	grew
+1	VerbPastTenseSingularIntransitive	migrated
+1	VerbPastTenseSingularIntransitive	knew
+
+1	VerbPastTensePluralTransitive	were
+1	VerbPastTensePluralTransitive	had
+1	VerbPastTensePluralTransitive	spoke
+1	VerbPastTensePluralTransitive	covered
+1	VerbPastTensePluralTransitive	rode
+1	VerbPastTensePluralTransitive	drank
+1	VerbPastTensePluralTransitive	grew
+1	VerbPastTensePluralTransitive	carried
+1	VerbPastTensePluralTransitive	suggested
+1	VerbPastTensePluralTransitive	migrated
+1	VerbPastTensePluralTransitive	knew
+
+1	VerbPastTensePluralIntransitive	spoke
+1	VerbPastTensePluralIntransitive	rode
+1	VerbPastTensePluralIntransitive	drank
+1	VerbPastTensePluralIntransitive	grew
+1	VerbPastTensePluralIntransitive	migrated
+1	VerbPastTensePluralIntransitive	knew
+
+
 
 # Verbs (past participle).
 1	VerbPastPart	had
@@ -266,10 +292,15 @@
 # TODO
 # Subordinating conjunctions.
 1	Misc	that
+1	Misc	if
 1	Misc	so
 1	Misc	while
 1	Misc	because
-1	Misc	if
+
+1	Transition	so
+1	Transition	while
+1	Transition	because
+
 
 # Modals.
 1	Modal	ought
@@ -283,8 +314,6 @@
 1	ModalHave	should
 1	ModalHave	will
 1	ModalHave	would
-
-
 
 # Adjectives.
 1	Adj	bloody
@@ -339,10 +368,10 @@
 
 
 # Possessive personal pronouns
-1	Misc	her
-1	Misc	his
-1	Misc	its
-1	Misc	their
+1	PossPersonalPronouns	her
+1	PossPersonalPronouns	his
+1	PossPersonalPronouns	its
+1	PossPersonalPronouns	their
 
 # Adverbs.
 1	Adverb	again
