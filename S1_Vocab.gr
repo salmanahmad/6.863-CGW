@@ -172,18 +172,18 @@
 1	AuxSingular	does
 
 # Verbs (past tense).
-1	Misc	had
-1	Misc	spoke
-1	Misc	covered
-1	Misc	was
-1	Misc	were
-1	Misc	rode
-1	Misc	drank
-1	Misc	grew
-1	Misc	carried
-1	Misc	suggested
-1	Misc	migrated
-1	Misc	knew
+1	VerbPastTense	had
+1	VerbPastTense	spoke
+1	VerbPastTense	covered
+1	VerbPastTense	was
+1	VerbPastTense	were
+1	VerbPastTense	rode
+1	VerbPastTense	drank
+1	VerbPastTense	grew
+1	VerbPastTense	carried
+1	VerbPastTense	suggested
+1	VerbPastTense	migrated
+1	VerbPastTense	knew
 
 # Verbs (past participle).
 1	VerbPastPart	had

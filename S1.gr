@@ -59,6 +59,7 @@
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
 
+1 VerbPhraseSingular1 VerbSingularToBe GerundVerbPhrase
 1 VerbPhraseSingular1 VerbSingular
 1 VerbPhraseSingular1 VerbSingular PrepPhrase
 1 VerbPhraseSingular1 Modal VerbInfPhrase
@@ -74,6 +75,7 @@
 1 VerbSingular VerbSingularIntransitive
 1 VerbSingular VerbSingularTransitive NounPhrase
 
+1 VerbPhrasePlural1 VerbPluralToBe GerundVerbPhrase
 1 VerbPhrasePlural1 VerbPlural
 1 VerbPhrasePlural1 VerbPlural PrepPhrase
 1 VerbPhrasePlural1 Modal VerbInfPhrase
@@ -117,12 +119,14 @@
 1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive PrepPhrase
 1 GerundVerbInfPhrase VerbThatIng NounPhraseSingular VerbInfIntransitive PrepPhrase
 1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive PrepPhrase
- 
-1 GerundVerbPhrase VerbIng
-1 GerundVerbPhrase VerbIng NounPhrase
-1 GerundVerbPhrase VerbIng PrepPhrase
-1 GerundVerbPhrase VerbIng NounPhrase PrepPhrase
 
+1 GerundVerbPhrase GerundVerb
+1 GerundVerbPhrase GerundVerb NounPhrase
+1 GerundVerbPhrase GerundVerb PrepPhrase
+1 GerundVerbPhrase GerundVerb NounPhrase PrepPhrase
+
+1 GerundVerb VerbIng
+1 GerundVerb VerbPastPart
 
 
 
