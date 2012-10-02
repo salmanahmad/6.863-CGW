@@ -67,10 +67,10 @@
 1	NounProperPlural	Saxons
 
 # Determiners.
-1	Det	any
 1	Det	no
 1	Det	the
 
+1 DetSingular any
 1 DetSingular this
 1 DetSingular that
 1 DetSingular a
@@ -232,6 +232,7 @@
 
 1	VerbSingularThat	suggests
 1	VerbSingularThat	knows
+1       VerbSingularIntransitive        knows
 
 # Verbs (present, plural, third person).
 1	VerbPluralTransitive	have
@@ -272,9 +273,9 @@
 1	Conj	and
 1	Conj	but
 1	Conj	or
-1	Conj	either
-1	Conj	nor
-1	Conj	neither
+#1	Conj	either
+#1	Conj	nor
+#1	Conj	neither
 1	Conj	so
 
 # Numbers.

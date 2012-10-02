@@ -1,4 +1,4 @@
-# This is a very, very, very simple grammar to get you started.
+B1;2c# This is a very, very, very simple grammar to get you started.
 
 1 S1 S EOS
 
@@ -7,8 +7,25 @@
 1 S do not VerbInfPhrase
 1 S it is NounPhraseSingular who VerbPhraseSingular
 # TODO - If we relaly want to...we can make this better...
+1 S NounPhrase and NounPhrase VerbPhrasePlural
+1 S either NounPhraseSingular or NounPhraseSingular VerbPhraseSingular
+1 S neither NounPhraseSingular nor NounPhraseSingular VerbPhraseSingular
+1 S either NounPhrasePlural or NounPhrasePlural VerbPhrasePlural
+1 S neither NounPhrasePlural nor NounPhrasePlural VerbPhrasePlural
+1 S either NounPhraseSingular VerbPhraseSingular or AuxPhrase
+1 S either NounPhrasePlural VerbPhrasePlural or AuxPhrase
+1 S neither NounPhraseSingular VerbPhraseSingular nor NAuxPhrase
+1 S neither NounPhrasePlural VerbPhrasePlural nor NAuxPhrase
+
+1 AuxPhrase NounPhraseSingular AuxSingular
+1 AuxPhrase NounPhrasePlural AuxPlural
+1 NAuxPhrase AuxSingular NounPhraseSingular
+1 NAuxPhrase AuxPlural NounPhrasePlural
+
 
 1 S1 S Transition S EOS
+1 S1 either S or S EOS
+1 S1 S Conj S EOS
 
 1 S1 AuxS ?
 
@@ -24,6 +41,9 @@
 
 1 AuxS AuxSingular NounPhraseSingular VerbInfPhrase
 1 AuxS AuxPlural NounPhrasePlural VerbInfPhrase
+
+#NP or NP VerbSingularPhrase
+#NP and NP VerbPluralPhase
 
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural
@@ -45,7 +65,7 @@
 1 NounPhrasePlural NounProperPlural
 1 NounPhrasePlural Cardinal NounPlural
 1 NounPhrasePlural PronounPlural
-1 NounPhrasePlural NounPhrase Conj NounPhrase
+#1 NounPhrasePlural NounPhrase NounConj NounPhrase
 #1 NounPhrasePlural DetPlural NounPlural
 
 1 NounPlural Adj NounPlural
@@ -71,6 +91,7 @@
 1 VerbPhraseSingular1 Modal VerbInfPhrase
 1 VerbPhraseSingular1 ModalHave have VerbPastPartPhrase
 
+1 VerbPhraseSingular VerbPhraseSingular1 Conj VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular1 Adverb
 1 VerbPhraseSingular Adverb VerbPhraseSingular1
@@ -88,6 +109,7 @@
 1 VerbPhrasePlural1 Modal VerbInfPhrase
 1 VerbPhrasePlural1 ModalHave have VerbPastPartPhrase
 
+1 VerbPhrasePlural VerbPhrasePlural1 Conj VerbPhrasePlural1
 1 VerbPhrasePlural VerbPhrasePlural1
 1 VerbPhrasePlural VerbPhrasePlural1 Adverb
 1 VerbPhrasePlural Adverb VerbPhrasePlural1
