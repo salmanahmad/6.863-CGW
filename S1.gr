@@ -113,6 +113,8 @@
 
 1 VerbInfPhrase VerbInf
 1 VerbInfPhrase VerbInf PrepPhrase
+1 VerbInfPhrase be VerbPastPart
+1 VerbInfPhrase be VerbPastPart PrepPhrase
 
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
@@ -128,6 +130,8 @@
 1 VerbPhraseSingular VerbPhraseSingular1 Adverb
 1 VerbPhraseSingular Adverb VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular S
+1 VerbPhraseSingular VerbSingularThat that S
+1 VerbPhraseSingular VerbSingularThat that NounPhrase VerbInfPhrase
 
 1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
@@ -146,6 +150,8 @@
 1 VerbPhrasePlural VerbPhrasePlural1 Adverb
 1 VerbPhrasePlural Adverb VerbPhrasePlural1
 1 VerbPhrasePlural VerbPluralThat S
+1 VerbPhrasePlural VerbPluralThat that S
+1 VerbPhrasePlural VerbPluralThat that NounPhrase VerbInfPhrase
 
 1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj

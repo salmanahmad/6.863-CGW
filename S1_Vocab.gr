@@ -140,8 +140,6 @@
 1	VerbInfThat	know
 
 
-
-
 # Verbs (present participles).
 1	VerbIng	having
 1	VerbIng	speaking
@@ -232,7 +230,9 @@
 
 1	VerbSingularThat	suggests
 1	VerbSingularThat	knows
-1       VerbSingularIntransitive        knows
+1	VerbSingularThat	suggested
+1	VerbSingularThat	knew
+1 VerbSingularIntransitive knows
 
 # Verbs (present, plural, third person).
 1	VerbPluralTransitive	have
@@ -252,6 +252,8 @@
 
 1	VerbPluralThat	suggest
 1	VerbPluralThat	know
+1	VerbPluralThat	suggested
+1	VerbPluralThat	knew
 
 
 # TODO - Punctuations
