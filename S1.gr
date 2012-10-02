@@ -1,27 +1,6 @@
-B1;2c# This is a very, very, very simple grammar to get you started.
+#B1;2c This is a very, very, very simple grammar to get you started.
 
 1 S1 S EOS
-
-1 S NounPhraseSingular VerbPhraseSingular
-1 S NounPhrasePlural VerbPhrasePlural
-1 S do not VerbInfPhrase
-1 S it is NounPhraseSingular who VerbPhraseSingular
-# TODO - If we relaly want to...we can make this better...
-1 S NounPhrase and NounPhrase VerbPhrasePlural
-1 S either NounPhraseSingular or NounPhraseSingular VerbPhraseSingular
-1 S neither NounPhraseSingular nor NounPhraseSingular VerbPhraseSingular
-1 S either NounPhrasePlural or NounPhrasePlural VerbPhrasePlural
-1 S neither NounPhrasePlural nor NounPhrasePlural VerbPhrasePlural
-1 S either NounPhraseSingular VerbPhraseSingular or AuxPhrase
-1 S either NounPhrasePlural VerbPhrasePlural or AuxPhrase
-1 S neither NounPhraseSingular VerbPhraseSingular nor NAuxPhrase
-1 S neither NounPhrasePlural VerbPhrasePlural nor NAuxPhrase
-
-1 AuxPhrase NounPhraseSingular AuxSingular
-1 AuxPhrase NounPhrasePlural AuxPlural
-1 NAuxPhrase AuxSingular NounPhraseSingular
-1 NAuxPhrase AuxPlural NounPhrasePlural
-
 
 1 S1 S Transition S EOS
 1 S1 either S or S EOS
@@ -39,6 +18,26 @@ B1;2c# This is a very, very, very simple grammar to get you started.
 1 S1 VerbSingularToBe NounPhraseSingular GerundVerbInfPhrase ?
 1 S1 VerbPluralToBe NounPhrasePlural GerundVerbInfPhrase ?
 
+1 S NounPhraseSingular VerbPhraseSingular
+1 S NounPhrasePlural VerbPhrasePlural
+1 S do not VerbInfPhrase
+1 S it is NounPhraseSingular who VerbPhraseSingular
+1 S NounPhrase and NounPhrase VerbPhrasePlural
+1 S either NounPhraseSingular or NounPhraseSingular VerbPhraseSingular
+1 S neither NounPhraseSingular nor NounPhraseSingular VerbPhraseSingular
+1 S either NounPhrasePlural or NounPhrasePlural VerbPhrasePlural
+1 S neither NounPhrasePlural nor NounPhrasePlural VerbPhrasePlural
+1 S either NounPhraseSingular VerbPhraseSingular or AuxPhrase
+1 S either NounPhrasePlural VerbPhrasePlural or AuxPhrase
+1 S neither NounPhraseSingular VerbPhraseSingular nor NAuxPhrase
+1 S neither NounPhrasePlural VerbPhrasePlural nor NAuxPhrase
+
+1 AuxPhrase NounPhraseSingular AuxSingular
+1 AuxPhrase NounPhrasePlural AuxPlural
+1 NAuxPhrase AuxSingular NounPhraseSingular
+1 NAuxPhrase AuxPlural NounPhrasePlural
+
+
 1 AuxS AuxSingular NounPhraseSingular VerbInfPhrase
 1 AuxS AuxPlural NounPhrasePlural VerbInfPhrase
 
@@ -51,20 +50,32 @@ B1;2c# This is a very, very, very simple grammar to get you started.
 
 1 Det PossPersonalPronouns
 
-1 NounPhraseSingular Det NounSingular
-1 NounPhraseSingular DetSingular NounSingular
-1 NounPhraseSingular NounProperSingular
-1 NounPhraseSingular GerundVerbPhrase
-1 NounPhraseSingular PronounSingular
+1 Pause PauseFull
+1 Pause PauseHalf
+
+1 PauseFullPhrase PauseFull NounPhrase PauseFull 
+
+1 NounPhraseSingular1 Det NounSingular
+1 NounPhraseSingular1 DetSingular NounSingular
+1 NounPhraseSingular1 NounProperSingular
+1 NounPhraseSingular1 GerundVerbPhrase
+1 NounPhraseSingular1 PronounSingular
+
+1 NounPhraseSingular NounPhraseSingular1
+1 NounPhraseSingular NounPhraseSingular1 PauseFullPhrase
 
 1 NounSingular Adj NounSingular
 1 NounProperSingular Adj NounProperSingular
 
-1 NounPhrasePlural NounPlural
-1 NounPhrasePlural Det NounPlural
-1 NounPhrasePlural NounProperPlural
-1 NounPhrasePlural Cardinal NounPlural
-1 NounPhrasePlural PronounPlural
+1 NounPhrasePlural1 NounPlural
+1 NounPhrasePlural1 Det NounPlural
+1 NounPhrasePlural1 NounProperPlural
+1 NounPhrasePlural1 Cardinal NounPlural
+1 NounPhrasePlural1 PronounPlural
+
+1 NounPhrasePlural NounPhrasePlural1
+1 NounPhrasePlural NounPhrasePlural1 PauseFullPhrase
+
 #1 NounPhrasePlural NounPhrase NounConj NounPhrase
 #1 NounPhrasePlural DetPlural NounPlural
 
@@ -129,8 +140,6 @@ B1;2c# This is a very, very, very simple grammar to get you started.
 
 1	VerbPluralTransitive	VerbPastTensePluralTransitive
 1	VerbPluralIntransitive	VerbPastTensePluralIntransitive
-
-
 
 1 VerbInfTransitive VerbInfThat NounPhraseSingular VerbSingularTransitive
 1 VerbInfTransitive VerbInfThat NounPhrasePlural VerbPluralTransitive

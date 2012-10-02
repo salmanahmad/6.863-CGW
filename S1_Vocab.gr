@@ -261,11 +261,17 @@
 1	EndOfQuestion	?
 
 # Pauses.
-1	Misc	,
-1	Misc	...
-1	Misc	--
-1	Misc	;
-1	Misc	:
+
+
+1	PauseFull	,
+1	PauseFull	...
+1	PauseFull	--
+
+1	PauseHalf	;
+1	PauseHalf	--
+1	PauseHalf	,
+1	PauseHalf	:
+1	PauseHalf	...
 
 
 # TODO
