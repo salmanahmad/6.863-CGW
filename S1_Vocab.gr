@@ -424,6 +424,10 @@
 1 WhoOrThat who
 1 WhoOrThat that
 
+1 WhNounStarter what
+1 WhNounStarter where
+1 WhNounStarter who
+1 WhNounStarter when
 
 # Possessive marker.
 1	Misc	's

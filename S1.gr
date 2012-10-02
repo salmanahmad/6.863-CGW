@@ -83,6 +83,10 @@
 1 NounPhraseSingular GerundVerbPhrase
 1 NounPhraseSingular PronounSingular
 
+
+1 NounPhraseSingular WhNounStarter S
+
+
 1 NounSingular Adj NounSingular
 1 NounProperSingular Adj NounProperSingular
 
