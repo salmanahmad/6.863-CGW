@@ -2,8 +2,9 @@
 
 1 S1 NounPhraseSingular VerbPhraseSingular EOS
 1 S1 NounPhrasePlural VerbPhrasePlural EOS
+1 S1 do not VerbInfPhrase EOS
 1 S1 it is NounPhraseSingular who VerbPhraseSingular EOS
-# TODO - If we reall really relaly really relaly really really reall really really want to...we can make this better...
+# TODO - If we relaly want to...we can make this better...
 
 1 S1 AuxS ?
 
