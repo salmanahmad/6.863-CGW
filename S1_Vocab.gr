@@ -229,9 +229,9 @@
 
 # TODO - Punctuations
 # End-of-sentence.
-1	Misc	!
-1	Misc	.
-1	Misc	?
+1	EOS	!
+1	EOS	.
+1	EndOfQuestion	?
 
 # Pauses.
 1	Misc	,
@@ -381,6 +381,9 @@
 1	WhAdverb	when
 1	WhAdverb	where
 1	WhAdverb	why
+
+1 WhoOrThat who
+1 WhoOrThat that
 
 
 # Possessive marker.
