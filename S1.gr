@@ -38,6 +38,7 @@
 1 NounPhrasePlural NounProperPlural
 1 NounPhrasePlural Cardinal NounPlural
 1 NounPhrasePlural PronounPlural
+1 NounPhrasePlural NounPhrase Conj NounPhrase
 #1 NounPhrasePlural DetPlural NounPlural
 
 1 NounPlural Adj NounPlural
@@ -57,10 +58,14 @@
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
 
-1 VerbPhraseSingular VerbSingular
-1 VerbPhraseSingular VerbSingular PrepPhrase
-1 VerbPhraseSingular Modal VerbInfPhrase
-1 VerbPhraseSingular ModalHave have VerbPastPartPhrase
+1 VerbPhraseSingular1 VerbSingular
+1 VerbPhraseSingular1 VerbSingular PrepPhrase
+1 VerbPhraseSingular1 Modal VerbInfPhrase
+1 VerbPhraseSingular1 ModalHave have VerbPastPartPhrase
+
+1 VerbPhraseSingular VerbPhraseSingular1
+1 VerbPhraseSingular VerbPhraseSingular1 Adverb
+1 VerbPhraseSingular Adverb VerbPhraseSingular1
 
 1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
@@ -68,10 +73,14 @@
 1 VerbSingular VerbSingularIntransitive
 1 VerbSingular VerbSingularTransitive NounPhrase
 
-1 VerbPhrasePlural VerbPlural
-1 VerbPhrasePlural VerbPlural PrepPhrase
-1 VerbPhrasePlural Modal VerbInfPhrase
-1 VerbPhrasePlural ModalHave have VerbPastPartPhrase
+1 VerbPhrasePlural1 VerbPlural
+1 VerbPhrasePlural1 VerbPlural PrepPhrase
+1 VerbPhrasePlural1 Modal VerbInfPhrase
+1 VerbPhrasePlural1 ModalHave have VerbPastPartPhrase
+
+1 VerbPhrasePlural VerbPhrasePlural1
+1 VerbPhrasePlural VerbPhrasePlural1 Adverb
+1 VerbPhrasePlural Adverb VerbPhrasePlural1
 
 1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj

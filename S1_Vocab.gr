@@ -243,13 +243,13 @@
 
 # TODO
 # Coordinating conjunctions.
-1	Misc	and
-1	Misc	but
-1	Misc	or
-1	Misc	either
-1	Misc	nor
-1	Misc	neither
-1	Misc	so
+1	Conj	and
+1	Conj	but
+1	Conj	or
+1	Conj	either
+1	Conj	nor
+1	Conj	neither
+1	Conj	so
 
 # Numbers.
 1	Cardinal	eight
@@ -345,14 +345,14 @@
 1	Misc	their
 
 # Adverbs.
-1	Adverbs	again
-1	Adverbs	already
-1	Adverbs	currently
-1	Adverbs	frequently
-1	Adverbs	precisely
-1	Adverbs	south
-1	Adverbs	successfully
-1	Adverbs	unfortunately
+1	Adverb	again
+1	Adverb	already
+1	Adverb	currently
+1	Adverb	frequently
+1	Adverb	precisely
+1	Adverb	south
+1	Adverb	successfully
+1	Adverb	unfortunately
 
 
 
