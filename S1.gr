@@ -56,6 +56,7 @@
 1 NounPhrase NounPhrasePlural
 1 NounPhrase NounPhrase PrepPhrase
 
+
 1 Det PossPersonalPronouns
 
 1 Pause PauseFull
@@ -79,11 +80,11 @@
 1 NounPhraseSingular Det NounSingular
 1 NounPhraseSingular DetSingular NounSingular
 1 NounPhraseSingular NounProperSingular
-1 NounPhraseSingular NounProperSingular PauseFullPhraseSingular
+0.001 NounPhraseSingular NounProperSingular PauseFullPhraseSingular
 1 NounPhraseSingular GerundVerbPhrase
 1 NounPhraseSingular PronounSingular
 
-
+0.001 NounPhraseSingular NounPhraseSingular WhDeterminer VerbPhraseSingular
 1 NounPhraseSingular WhNounStarter S
 
 
@@ -93,9 +94,12 @@
 1 NounPhrasePlural NounPlural
 1 NounPhrasePlural Det NounPlural
 1 NounPhrasePlural NounProperPlural
-1 NounPhrasePlural NounProperPlural PauseFullPhrasePlural
+0.001 NounPhrasePlural NounProperPlural PauseFullPhrasePlural
 1 NounPhrasePlural Cardinal NounPlural
 1 NounPhrasePlural PronounPlural
+
+0.001 NounPhrasePlural NounPhrasePlural WhDeterminer VerbPhrasePlural
+
 
 #1 NounPhrasePlural NounPhrase NounConj NounPhrase
 #1 NounPhrasePlural DetPlural NounPlural

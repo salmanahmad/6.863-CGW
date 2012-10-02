@@ -403,9 +403,9 @@
 
 
 # Wh-determiners.
-1	WHDeterminer	that
-1	WHDeterminer	what
-1	WHDeterminer	which
+1	WhDeterminer	that
+1	WhDeterminer	what
+1	WhDeterminer	which
 
 # Wh-pronouns.
 1	WhPronoun	what
