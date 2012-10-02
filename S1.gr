@@ -43,13 +43,22 @@
 
 1 PrepPhrase Prep NounPhrase
 
+1 Modal ModalHave
+
+1 VerbPastPartPhrase VerbPastPart
+1 VerbPastPartPhrase VerbPastPart PrepPhrase
+# TODO - Do we need to handle transitive/intrasitive and "to be" verbs
+
 1 VerbInfPhrase VerbInf
 1 VerbInfPhrase VerbInf PrepPhrase
+
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
 
 1 VerbPhraseSingular VerbSingular
 1 VerbPhraseSingular VerbSingular PrepPhrase
+1 VerbPhraseSingular Modal VerbInfPhrase
+1 VerbPhraseSingular ModalHave have VerbPastPartPhrase
 
 1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
@@ -59,6 +68,8 @@
 
 1 VerbPhrasePlural VerbPlural
 1 VerbPhrasePlural VerbPlural PrepPhrase
+1 VerbPhrasePlural Modal VerbInfPhrase
+1 VerbPhrasePlural ModalHave have VerbPastPartPhrase
 
 1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj

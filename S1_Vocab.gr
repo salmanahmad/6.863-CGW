@@ -186,17 +186,17 @@
 1	Misc	knew
 
 # Verbs (past participle).
-1	Misc	had
-1	Misc	spoken
-1	Misc	covered
-1	Misc	been
-1	Misc	ridden
-1	Misc	drunk
-1	Misc	grown
-1	Misc	carried
-1	Misc	suggested
-1	Misc	migrated
-1	Misc	known
+1	VerbPastPart	had
+1	VerbPastPart	spoken
+1	VerbPastPart	covered
+1	VerbPastPart	been
+1	VerbPastPart	ridden
+1	VerbPastPart	drunk
+1	VerbPastPart	grown
+1	VerbPastPart	carried
+1	VerbPastPart	suggested
+1	VerbPastPart	migrated
+1	VerbPastPart	known
 
 # More third person singular verbs.
 1	Misc	speaks
@@ -272,16 +272,18 @@
 1	Misc	if
 
 # Modals.
-1	Modal	can
-1	Modal	could
-1	Modal	may
-1	Modal	might
-1	Modal	must
 1	Modal	ought
-1	Modal	shall
-1	Modal	should
-1	Modal	will
-1	Modal	would
+
+1	ModalHave	can
+1	ModalHave	could
+1	ModalHave	may
+1	ModalHave	might
+1	ModalHave	must
+1	ModalHave	shall
+1	ModalHave	should
+1	ModalHave	will
+1	ModalHave	would
+
 
 
 # Adjectives.
