@@ -125,7 +125,7 @@
 1	VerbInfTransitive	grow
 1	VerbInfTransitive	carry
 
-1 VerbInfIntransitive     cover
+1 VerbInfIntransitive cover
 1	VerbInfIntransitive	grow
 1	VerbInfIntransitive	drink
 1	VerbInfIntransitive	ride
@@ -275,8 +275,8 @@
 
 
 1	PauseFull	,
-1	PauseFull	...
-1	PauseFull	--
+0.01	PauseFull	...
+0.01	PauseFull	--
 
 1	PauseHalf	;
 1	PauseHalf	--

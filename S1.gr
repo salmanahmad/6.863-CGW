@@ -5,7 +5,7 @@
 # TODO - Previously this was S (with no EOS)
 1 S1 CommandAux VerbInfPhrase EOS
 
-10000 S1 NounPhraseSingular VerbPhraseSingular
+10 S1 NounPhraseSingular VerbPhraseSingular EOS
 
 1 S1 S Transition S EOS
 0.001 S1 either S or S EOS
@@ -83,7 +83,7 @@
 1 NounPhraseSingular DetSingular NounSingular
 1 NounPhraseSingular NounProperSingular
 0.001 NounPhraseSingular NounProperSingular PauseFullPhraseSingular
-1 NounPhraseSingular VerbIngPhrase
+0.01 NounPhraseSingular VerbIngPhrase
 #1 NounPhraseSingular GerundVerbPhrase #TODO: refactor
 # TODO: S -> GerundVerbPhrasePresent VerbToBe
 0.001 NounPhraseSingular PronounSingular
