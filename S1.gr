@@ -7,6 +7,9 @@
 
 10 S1 NounPhraseSingular VerbPhraseSingular EOS
 
+10 S1 NounPhraseSingular VerbSingularToBe the AdjSup NounSingular EOS
+10 S1 NounPhrasePlural VerbPluralToBe the AdjSup NounPlural EOS
+
 1 S1 S Transition S EOS
 0.001 S1 either S or S EOS
 1 S1 S ConjSen S EOS
@@ -48,8 +51,8 @@
 1 NAuxPhrase AuxPlural NounPhrasePlural
 
 
-1 AuxS AuxSingular NounPhraseSingular VerbInfPhrase
-1 AuxS AuxPlural NounPhrasePlural VerbInfPhrase
+1 AuxS AuxSingular NounPhraseSingular VerbInfPhraseAux
+1 AuxS AuxPlural NounPhrasePlural VerbInfPhraseAux
 
 #NP or NP VerbSingularPhrase
 #NP and NP VerbPluralPhase
@@ -122,13 +125,17 @@
 1 VerbPastPartPhrase VerbPastPart1 PrepPhrase
 # TODO - Do we need to handle transitive/intrasitive and "to be" verbs
 
-1 VerbInfPhrase VerbInf
-1 VerbInfPhrase VerbInf Adverb
-1 VerbInfPhrase VerbInf PrepPhrase
+1 VerbInfPhrase VerbInfPhraseAux
+1 VerbInfPhrase be
+1 VerbInfPhrase be NounPhrase
 1 VerbInfPhrase be VerbPastPart
 1 VerbInfPhrase be VerbPastPart PrepPhrase
 1 VerbInfPhrase be Adj
 1 VerbInfPhrase be GerundVerbPhrase
+
+1 VerbInfPhraseAux VerbInf
+1 VerbInfPhraseAux VerbInf Adverb
+1 VerbInfPhraseAux VerbInf PrepPhrase
 
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
@@ -142,8 +149,8 @@
 
 1 VerbPhraseSingular VerbPhraseSingular1 Conj VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular1
-0.001 VerbPhraseSingular VerbPhraseSingular1 Adverb
-1 VerbPhraseSingular Adverb VerbPhraseSingular1
+1 VerbPhraseSingular VerbPhraseSingular1 Adverb
+0.001 VerbPhraseSingular Adverb VerbPhraseSingular1
 #1 VerbPhraseSingular VerbPhraseSingular S
 0.001 VerbPhraseSingular VerbSingularThat that S
 0.001 VerbPhraseSingular VerbSingularThat that NounPhrase VerbInfPhrase
@@ -163,8 +170,8 @@
 
 1 VerbPhrasePlural VerbPhrasePlural1 Conj VerbPhrasePlural1
 1 VerbPhrasePlural VerbPhrasePlural1
-0.001 VerbPhrasePlural VerbPhrasePlural1 Adverb
-1 VerbPhrasePlural Adverb VerbPhrasePlural1
+1 VerbPhrasePlural VerbPhrasePlural1 Adverb
+0.001 VerbPhrasePlural Adverb VerbPhrasePlural1
 1 VerbPhrasePlural VerbPluralThat S
 0.001 VerbPhrasePlural VerbPluralThat that S
 0.001 VerbPhrasePlural VerbPluralThat that NounPhrase VerbInfPhrase

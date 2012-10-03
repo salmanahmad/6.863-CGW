@@ -119,7 +119,7 @@
 1	VerbInfTransitive	have
 1	VerbInfTransitive	speak
 1	VerbInfTransitive	cover
-1	VerbInfTransitive	be
+#1	VerbInfTransitive	be
 1	VerbInfTransitive	ride
 1	VerbInfTransitive	drink
 1	VerbInfTransitive	grow
@@ -129,7 +129,7 @@
 1	VerbInfIntransitive	grow
 1	VerbInfIntransitive	drink
 1	VerbInfIntransitive	ride
-1	VerbInfIntransitive	be
+#1	VerbInfIntransitive	be
 1	VerbInfIntransitive	migrate
 1	VerbInfIntransitive	speak
 1	VerbInfIntransitive	know
@@ -357,22 +357,22 @@
 1	Adj	plodding
 
 # Comparative adjectives.
-1	Misc	bloodier
-1	Misc	wearier
-1	Misc	trustier
-1	Misc	hotter
-1	Misc	simpler
-1	Misc	tinier
-1	Misc	harder
+1	Adj	bloodier
+1	Adj	wearier
+1	Adj	trustier
+1	Adj	hotter
+1	Adj	simpler
+1	Adj	tinier
+1	Adj	harder
 
 # Superlative adjectives.
-1	Misc	bloodiest
-1	Misc	weariest
-1	Misc	trustiest
-1	Misc	hottest
-1	Misc	simplest
-1	Misc	tiniest
-1	Misc	hardest
+1	AdjSup	bloodiest
+1	AdjSup	weariest
+1	AdjSup	trustiest
+1	AdjSup	hottest
+1	AdjSup	simplest
+1	AdjSup	tiniest
+1	AdjSup	hardest
 
 
 # Personal pronouns.
