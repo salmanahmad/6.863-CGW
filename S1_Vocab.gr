@@ -125,7 +125,7 @@
 1	VerbInfTransitive	grow
 1	VerbInfTransitive	carry
 
-1       VerbInfIntransitive     cover
+1 VerbInfIntransitive     cover
 1	VerbInfIntransitive	grow
 1	VerbInfIntransitive	drink
 1	VerbInfIntransitive	ride
@@ -217,7 +217,6 @@
 1	VerbPastPart	had
 1	VerbPastPart	spoken
 1	VerbPastPart	covered
-1	VerbPastPart	been
 1	VerbPastPart	ridden
 1	VerbPastPart	drunk
 1	VerbPastPart	grown
@@ -225,6 +224,10 @@
 1	VerbPastPart	suggested
 1	VerbPastPart	migrated
 1	VerbPastPart	known
+
+1	VerbPastPartBeen	been
+
+
 
 # BIG TODO HANDLE THESE
 # More third person singular verbs.
@@ -284,13 +287,14 @@
 
 # TODO
 # Coordinating conjunctions.
+1 ConjSen Conj
 1	Conj	and
-1	Conj	but
+0.01	Conj	but
 1	Conj	or
 #1	Conj	either
 #1	Conj	nor
 #1	Conj	neither
-1	Conj	so
+1	ConjSen	so
 
 # Numbers.
 1	Cardinal	eight
@@ -312,6 +316,7 @@
 1	Misc	while
 1	Misc	because
 
+1 ConjSen Transition
 1	Transition	so
 1	Transition	while
 1	Transition	because

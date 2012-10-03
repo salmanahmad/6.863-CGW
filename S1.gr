@@ -9,7 +9,7 @@
 
 1 S1 S Transition S EOS
 0.001 S1 either S or S EOS
-1 S1 S Conj S EOS
+1 S1 S ConjSen S EOS
 
 
 1 S1 AuxS ?
@@ -83,11 +83,13 @@
 1 NounPhraseSingular DetSingular NounSingular
 1 NounPhraseSingular NounProperSingular
 0.001 NounPhraseSingular NounProperSingular PauseFullPhraseSingular
-1 NounPhraseSingular GerundVerbPhrase
+1 NounPhraseSingular VerbIngPhrase
+#1 NounPhraseSingular GerundVerbPhrase #TODO: refactor
+# TODO: S -> GerundVerbPhrasePresent VerbToBe
 0.001 NounPhraseSingular PronounSingular
 
 0.001 NounPhraseSingular NounPhraseSingular WhDeterminer VerbPhraseSingular
-1 NounPhraseSingular WhNounStarter S
+0.001 NounPhraseSingular WhNounStarter S
 
 
 1 NounSingular Adj NounSingular
@@ -113,8 +115,11 @@
 
 1 Modal ModalHave
 
-1 VerbPastPartPhrase VerbPastPart
-1 VerbPastPartPhrase VerbPastPart PrepPhrase
+1 VerbPastPartPhrase VerbPastPart1
+1 VerbPastPart1 VerbPastPart
+1 VerbPastPart1 VerbPastPartBeen
+1 VerbPastPart1 VerbPastPartBeen GerundVerbPhrase
+1 VerbPastPartPhrase VerbPastPart1 PrepPhrase
 # TODO - Do we need to handle transitive/intrasitive and "to be" verbs
 
 1 VerbInfPhrase VerbInf
@@ -122,6 +127,8 @@
 1 VerbInfPhrase VerbInf PrepPhrase
 1 VerbInfPhrase be VerbPastPart
 1 VerbInfPhrase be VerbPastPart PrepPhrase
+1 VerbInfPhrase be Adj
+1 VerbInfPhrase be GerundVerbPhrase
 
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
@@ -130,19 +137,20 @@
 1 VerbPhraseSingular1 VerbSingularToBe GerundVerbPhrase
 1 VerbPhraseSingular1 VerbSingular
 1 VerbPhraseSingular1 VerbSingular PrepPhrase
-1 VerbPhraseSingular1 Modal VerbInfPhrase
-1 VerbPhraseSingular1 ModalHave have VerbPastPartPhrase
+0.001 VerbPhraseSingular1 Modal VerbInfPhrase
+0.001 VerbPhraseSingular1 ModalHave have VerbPastPartPhrase
 
 1 VerbPhraseSingular VerbPhraseSingular1 Conj VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular1
 0.001 VerbPhraseSingular VerbPhraseSingular1 Adverb
 1 VerbPhraseSingular Adverb VerbPhraseSingular1
-1 VerbPhraseSingular VerbPhraseSingular S
+#1 VerbPhraseSingular VerbPhraseSingular S
 0.001 VerbPhraseSingular VerbSingularThat that S
 0.001 VerbPhraseSingular VerbSingularThat that NounPhrase VerbInfPhrase
 
 1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
+1 VerbSingular VerbSingularToBe GerundVerbPhrase
 
 1 VerbSingular VerbSingularIntransitive
 1 VerbSingular VerbSingularTransitive NounPhrase
@@ -150,8 +158,8 @@
 1 VerbPhrasePlural1 VerbPluralToBe GerundVerbPhrase
 1 VerbPhrasePlural1 VerbPlural
 1 VerbPhrasePlural1 VerbPlural PrepPhrase
-1 VerbPhrasePlural1 Modal VerbInfPhrase
-1 VerbPhrasePlural1 ModalHave have VerbPastPartPhrase
+0.001 VerbPhrasePlural1 Modal VerbInfPhrase
+0.001 VerbPhrasePlural1 ModalHave have VerbPastPartPhrase
 
 1 VerbPhrasePlural VerbPhrasePlural1 Conj VerbPhrasePlural1
 1 VerbPhrasePlural VerbPhrasePlural1
@@ -163,6 +171,7 @@
 
 1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj
+1 VerbPlural VerbPluralToBe GerundVerbPhrase
 
 1 VerbPlural VerbPluralIntransitive
 1 VerbPlural VerbPluralTransitive NounPhrase
@@ -203,78 +212,19 @@
 1 GerundVerbInfPhrase VerbThatIng NounPhrasePlural VerbInfIntransitive PrepPhrase
 
 1 GerundVerbPhrase GerundVerb
-1 GerundVerbPhrase GerundVerb NounPhrase
+1 GerundVerbPhrase VerbIng NounPhrase
 1 GerundVerbPhrase GerundVerb PrepPhrase
-1 GerundVerbPhrase GerundVerb NounPhrase PrepPhrase
+1 GerundVerbPhrase VerbIng NounPhrase PrepPhrase
 
 1 GerundVerb VerbIng
 1 GerundVerb VerbPastPart
 
+1 VerbIngPhrase VerbIng
+1 VerbIngPhrase VerbIng NounPhrase
+1 VerbIngPhrase VerbIng PrepPhrase
+1 VerbIngPhrase VerbIng NounPhrase PrepPhrase
 
 
 
 
-
-
-
-
-#
-#
-#
-#1 S1 VerbIng PP is Adj .
-#1 S1 VerbIng PP VP Adverbs .
-#
-#1 S1 YNP ?
-#1 S1 WHDeterminer YNP  ?
-#1 S1 WHPronoun VBZ NP VPT VSP   ?
-#1 S1 WHAdverb YNP ?
-#1 S1 VerbToBe Pronoun VPIng ?
-#
-#
-##1 S1 WHPronoun YNP  ?
-#
-#1 VPIng VerbIng
-#
-#1 VPIng VPTIng VSP
-#
-#
-#1 YNP VBZ InfS
-#
-#1 InfS NP VerbIP
-#
-#1 VerbIP VerbI
-#1 VerbIP VPT
-#
-## TODO - Special case for possessives or something...
-#1 VerbIP VerbI NP 
-#
-#1	VP	VerbT NP
-#1	VP	VerbT PP
-#
-## TODO - Consider making VerbI a phrasal verb...
-#1 VSP NP VerbI PP
-#
-## TODO - Add a root class for all of the verbs
-##1 VSP NP Verb
-#
-#1 VPT VerbThat
-#1 VPT VerbThat that
-#
-#1 VPT VerbThat
-#1 VPT VerbThat that
-#
-#1 VPTIng VerbThatIng
-#1 VPTIng VerbThatIng that
-#
-#20	NP	Det Nbar
-#20	NP	NounPl
-#1	NP	Proper
-#1	NP	Pronoun
-#
-#20	Nbar	Noun
-#20	Nbar	NounPl
-#1	Nbar	Nbar PP
-#
-#1	PP	Prep NP
-#
 
