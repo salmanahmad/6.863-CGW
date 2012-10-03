@@ -60,8 +60,8 @@
 1	NounProperSingular	Camelot
 1	NounProperSingular	England
 
-1	NounProperSingular	the Holy Grail
-1	NounProperSingular	the Round Table
+1	NounSingular	Holy Grail
+1	NounSingular	Round Table
 
 1	NounProperPlural	Britons
 1	NounProperPlural	Saxons
@@ -125,7 +125,7 @@
 1	VerbInfTransitive	grow
 1	VerbInfTransitive	carry
 
-
+1       VerbInfIntransitive     cover
 1	VerbInfIntransitive	grow
 1	VerbInfIntransitive	drink
 1	VerbInfIntransitive	ride
@@ -154,6 +154,7 @@
 1	VerbIng	knowing
 
 1 VerbThatIng suggesting
+1 VerbThatIng having
 
 1 VerbSingularToBe is
 1 VerbSingularToBe was
@@ -166,8 +167,11 @@
 1 VerbThat know
 
 # a 3rd person verb
-1 AuxPlural	do
+1   	AuxPlural	do
 1	AuxSingular	does
+
+1 	CommandAux	do
+1	CommandAux	do not
 
 # Verbs (past tense).
 1	VerbPastTenseSingularTransitive	was
@@ -222,11 +226,13 @@
 1	VerbPastPart	migrated
 1	VerbPastPart	known
 
+# BIG TODO HANDLE THESE
 # More third person singular verbs.
-1	Misc	speaks
-1	Misc	grows
-1	Misc	goes
-1	Misc	migrates
+1	VerbSingularIntransitive	speaks
+1	VerbSingularIntransitive	grows
+1       VerbSingularTransitive        grows
+1	VerbSingularIntransitive	goes
+1	VerbSingularIntransitive	migrates
 
 1	VerbSingularThat	suggests
 1	VerbSingularThat	knows

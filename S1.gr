@@ -2,12 +2,15 @@
 
 1 S1 S EOS
 
+# TODO - Previously this was S (with no EOS)
+1 S1 CommandAux VerbInfPhrase EOS
 
 10000 S1 NounPhraseSingular VerbPhraseSingular
 
 1 S1 S Transition S EOS
-1 S1 either S or S EOS
+0.001 S1 either S or S EOS
 1 S1 S Conj S EOS
+
 
 1 S1 AuxS ?
 
@@ -28,17 +31,16 @@
 
 1 S NounPhraseSingular VerbPhraseSingular
 1 S NounPhrasePlural VerbPhrasePlural
-1 S do not VerbInfPhrase
 1 S it is NounPhraseSingular who VerbPhraseSingular
 1 S NounPhrase and NounPhrase VerbPhrasePlural
-1 S either NounPhraseSingular or NounPhraseSingular VerbPhraseSingular
-1 S neither NounPhraseSingular nor NounPhraseSingular VerbPhraseSingular
-1 S either NounPhrasePlural or NounPhrasePlural VerbPhrasePlural
-1 S neither NounPhrasePlural nor NounPhrasePlural VerbPhrasePlural
-1 S either NounPhraseSingular VerbPhraseSingular or AuxPhrase
-1 S either NounPhrasePlural VerbPhrasePlural or AuxPhrase
-1 S neither NounPhraseSingular VerbPhraseSingular nor NAuxPhrase
-1 S neither NounPhrasePlural VerbPhrasePlural nor NAuxPhrase
+0.001 S either NounPhraseSingular or NounPhraseSingular VerbPhraseSingular
+0.001 S neither NounPhraseSingular nor NounPhraseSingular VerbPhraseSingular
+0.001 S either NounPhrasePlural or NounPhrasePlural VerbPhrasePlural
+0.001 S neither NounPhrasePlural nor NounPhrasePlural VerbPhrasePlural
+0.001 S either NounPhraseSingular VerbPhraseSingular or AuxPhrase
+0.001 S either NounPhrasePlural VerbPhrasePlural or AuxPhrase
+0.001 S neither NounPhraseSingular VerbPhraseSingular nor NAuxPhrase
+0.001 S neither NounPhrasePlural VerbPhrasePlural nor NAuxPhrase
 
 1 AuxPhrase NounPhraseSingular AuxSingular
 1 AuxPhrase NounPhrasePlural AuxPlural
@@ -54,7 +56,7 @@
 
 1 NounPhrase NounPhraseSingular
 1 NounPhrase NounPhrasePlural
-1 NounPhrase NounPhrase PrepPhrase
+0.001 NounPhrase NounPhrase PrepPhrase
 
 
 1 Det PossPersonalPronouns
@@ -82,7 +84,7 @@
 1 NounPhraseSingular NounProperSingular
 0.001 NounPhraseSingular NounProperSingular PauseFullPhraseSingular
 1 NounPhraseSingular GerundVerbPhrase
-1 NounPhraseSingular PronounSingular
+0.001 NounPhraseSingular PronounSingular
 
 0.001 NounPhraseSingular NounPhraseSingular WhDeterminer VerbPhraseSingular
 1 NounPhraseSingular WhNounStarter S
@@ -96,7 +98,7 @@
 1 NounPhrasePlural NounProperPlural
 0.001 NounPhrasePlural NounProperPlural PauseFullPhrasePlural
 1 NounPhrasePlural Cardinal NounPlural
-1 NounPhrasePlural PronounPlural
+0.001 NounPhrasePlural PronounPlural
 
 0.001 NounPhrasePlural NounPhrasePlural WhDeterminer VerbPhrasePlural
 
@@ -116,12 +118,14 @@
 # TODO - Do we need to handle transitive/intrasitive and "to be" verbs
 
 1 VerbInfPhrase VerbInf
+1 VerbInfPhrase VerbInf Adverb
 1 VerbInfPhrase VerbInf PrepPhrase
 1 VerbInfPhrase be VerbPastPart
 1 VerbInfPhrase be VerbPastPart PrepPhrase
 
 1 VerbInf VerbInfIntransitive
 1 VerbInf VerbInfTransitive NounPhrase
+1 VerbInfTransitive VerbInfThat
 
 1 VerbPhraseSingular1 VerbSingularToBe GerundVerbPhrase
 1 VerbPhraseSingular1 VerbSingular
@@ -131,11 +135,11 @@
 
 1 VerbPhraseSingular VerbPhraseSingular1 Conj VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular1
-1 VerbPhraseSingular VerbPhraseSingular1 Adverb
+0.001 VerbPhraseSingular VerbPhraseSingular1 Adverb
 1 VerbPhraseSingular Adverb VerbPhraseSingular1
 1 VerbPhraseSingular VerbPhraseSingular S
-1 VerbPhraseSingular VerbSingularThat that S
-1 VerbPhraseSingular VerbSingularThat that NounPhrase VerbInfPhrase
+0.001 VerbPhraseSingular VerbSingularThat that S
+0.001 VerbPhraseSingular VerbSingularThat that NounPhrase VerbInfPhrase
 
 1 VerbSingular VerbSingularToBe
 1 VerbSingular VerbSingularToBe Adj
@@ -151,11 +155,11 @@
 
 1 VerbPhrasePlural VerbPhrasePlural1 Conj VerbPhrasePlural1
 1 VerbPhrasePlural VerbPhrasePlural1
-1 VerbPhrasePlural VerbPhrasePlural1 Adverb
+0.001 VerbPhrasePlural VerbPhrasePlural1 Adverb
 1 VerbPhrasePlural Adverb VerbPhrasePlural1
 1 VerbPhrasePlural VerbPluralThat S
-1 VerbPhrasePlural VerbPluralThat that S
-1 VerbPhrasePlural VerbPluralThat that NounPhrase VerbInfPhrase
+0.001 VerbPhrasePlural VerbPluralThat that S
+0.001 VerbPhrasePlural VerbPluralThat that NounPhrase VerbInfPhrase
 
 1 VerbPlural VerbPluralToBe
 1 VerbPlural VerbPluralToBe Adj
